@@ -3,7 +3,7 @@
 The app when opened shows the list of contacts from the phone. The app can be refreshed using a swipe from top.
 When a contact is clicked, it goes to the another activity and the shows the name, phone number, email id and image.
 
-The apk is generated in the /app/release folder.
+<b>The apk is generated in the /app/release folder.</b>
 
 The screenshots for the app are included.
 1. App showing all contacts.
