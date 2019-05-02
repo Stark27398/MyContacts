@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profilePicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/contact_placeholder"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="#d1b1b1"
+        android:layout_above="@id/innerRelative"
+        android:foregroundGravity="center"/>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/innerRelative"
+        android:layout_centerInParent="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name  : "
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/nm"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/nm"
+        android:layout_alignBaseline="@id/nm"
+        android:id="@+id/name1"
+        android:layout_margin="20dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone : "
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/nm"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/ph"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone1"
+        android:layout_alignBaseline="@id/ph"
+        android:layout_toRightOf="@id/ph"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/name1"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email  : "
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_below="@id/ph"
+            android:textStyle="bold"
+            android:id="@+id/em"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email1"
+        android:layout_alignBaseline="@id/em"
+        android:layout_margin="20dp"
+        android:layout_toRightOf="@id/em"
+        android:layout_below="@+id/phone1"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>
